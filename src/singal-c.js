@@ -1,5 +1,28 @@
 const socket = require("socket.io-client");
 const Uid = require("./uid");
+
+/**
+ * @typedef Body
+ * @property {string} auditorium
+ * @property {number} statusCode
+ * @property {string} status
+ * @property {Object} response
+ *
+ */
+
+/**
+ * @typedef Response
+ * @property {string}  name
+ * @property {Body}  body
+ */
+
+/**
+ * @typedef CustomError
+ * @property {string}  name
+ * @property {string}  message
+ * @property {Body}  body
+ */
+
 /**
  * @type {ReturnType<import('socket.io-client')>}
  */
@@ -23,6 +46,7 @@ function connector({ signalcUrl } = {}) {
 
 /**
  * @param {{name:string, body:Object}} param0
+ * @returns {Promise<Response>}
  */
 function emit({ name, body } = {}) {
   return new Promise((resolve, reject) => {
@@ -50,6 +74,10 @@ function emit({ name, body } = {}) {
     });
   });
 }
+
+emit()
+  .then()
+  .catch();
 
 module.exports = Object.freeze({
   connector,
