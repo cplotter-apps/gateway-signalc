@@ -1,5 +1,5 @@
 {
-  "name": "gateway-signal-c",
+  "name": "gateway-signalc",
   "version": "1.0.0",
   "description": "Official gateway controller for Signal-C",
   "main": "index.js",
