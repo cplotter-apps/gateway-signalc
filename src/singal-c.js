@@ -13,14 +13,14 @@ const Uid = require("./uid");
 /**
  * @typedef Response
  * @property {string}  name
- * @property {Body}  body
+ * @property {Body[]}  body
  */
 
 /**
  * @typedef CustomError
  * @property {string}  name
  * @property {string}  message
- * @property {Body}  body
+ * @property {Body[]}  body
  */
 
 /**
