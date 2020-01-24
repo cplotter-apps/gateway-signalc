@@ -75,10 +75,6 @@ function emit({ name, body } = {}) {
   });
 }
 
-emit()
-  .then()
-  .catch();
-
 module.exports = Object.freeze({
   connector,
   emit

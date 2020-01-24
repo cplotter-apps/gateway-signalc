@@ -1,6 +1,6 @@
 {
   "name": "gateway-signalc",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Official gateway controller for Signal-C",
   "main": "index.js",
   "scripts": {
